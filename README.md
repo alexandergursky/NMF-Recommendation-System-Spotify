@@ -7,7 +7,7 @@ The initial matrix of the NMF algorithm is regarded as a clustering result. The 
 <br><br>
 ### How To Use
 I have included the trained model for demonstration purposes, if you would like the raw data in order to follow along 
-with my cleaning and wrangling process, please reach out to me and I would be glad to distribute that. 
+with my cleaning and wrangling process, please reach out to me and I would be glad to distribute that. The data comes from Spotify's API, my raw data contains over 2.3 billion observations by 4 features, so naturally it is a huge file that can not be uploaded to GitHub (file is a 1.3Gb CSV file). 
 To use it, open one of the 3 files listed below: <br>
 - "Spotify_NMF_Final.ipynb"
 - "NMF_Music_Artist_Recomend_Sys_R_Conversion.R"
