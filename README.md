@@ -6,5 +6,5 @@ The initial matrix of the NMF algorithm is regarded as a clustering result.
 ### How To Use
 I have included the trained model for demonstration purposes, if you would like the raw data in order to follow along 
 with my cleaning and wrangling process, please reach out to me and I would be glad to distribute that. 
-To use it, open the notebook labeled "Spotify_NMF_Final.ipynb", then run the cell which loads the model. Lastly select the artist of your choosing.
+To use it, open the notebook labeled "Spotify_NMF_Final.ipynb" or alternatively the file named "NMF_Music_Artist_Recomend_Sys_R_Conversion.R", then run the cell/line which loads the model. Lastly select the artist of your choosing.
 Please reach out for any further inquiries. 
