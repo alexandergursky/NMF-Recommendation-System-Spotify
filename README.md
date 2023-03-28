@@ -1,7 +1,9 @@
 # NMF_Recommendation_System
 ## How Spotify Uses Decomposition Algorithms for Song Recommendations
 NMF is a dimensional reduction method and effective for document/feature clustering, because a term-document matrix is high-dimensional and sparse. 
-The initial matrix of the NMF algorithm is regarded as a clustering result. The trained model contains 7703 artists and 1121 users. Training the model took 40 minutes on 8 CPU cores clocking an average of 4.20GHz.
+The initial matrix of the NMF algorithm is regarded as a clustering result. The trained model contains 7703 artists and 1121 users. Training the model took 40 minutes on 8 CPU cores clocking an average of 4.20GHz. Spotify and Apple Music both use the concept of collaborative filtering to recommend you artist and songs that are based on users with a similar listening history as you. Other companies use these recomendation systems as well, such as Amazon, Walmart, and really any business partaking in e-commerce. Recomendation systems are what is used under the hood of your customer/user experiance when you are checking out on Amazon and you see the pop-up of more products with the caption "Other users who purchased X also purchased Y, would you like to add Y to your cart?". This project uses the algorithm Non-Negative Matrix Factorization (NMF).
+<br><br>
+![Screenshot](nmf-function.PNG)
 <br><br>
 ### How To Use
 I have included the trained model for demonstration purposes, if you would like the raw data in order to follow along 
