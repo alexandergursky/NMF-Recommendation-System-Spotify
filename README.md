@@ -1,7 +1,7 @@
 # NMF_Recommendation_System
 ## How Spotify Uses Decomposition Algorithms for Song Recommendations
 NMF is a dimensional reduction method and effective for document/feature clustering, because a term-document matrix is high-dimensional and sparse. 
-The initial matrix of the NMF algorithm is regarded as a clustering result. The trained model contains 7703 artist and 1121 users.
+The initial matrix of the NMF algorithm is regarded as a clustering result. The trained model contains 7703 artists and 1121 users. Training the model took 40 minutes on 8 CPU cores clocking an average of 4.20GHz.
 <br><br>
 ### How To Use
 I have included the trained model for demonstration purposes, if you would like the raw data in order to follow along 
