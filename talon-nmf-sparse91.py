@@ -9,7 +9,7 @@ import datetime
 
 start_time = datetime.datetime.now()
 
-master_df = pd.read_csv('spotify-sparse9.csv')
+master_df = pd.read_csv('sparse-artist-cleaning.csv')
 
 # Extracting a list of artist names, I will need this later on after sparse has gone through the pipeline.
 artist_list = master_df['artistname'].values.tolist()
@@ -23,10 +23,10 @@ scaler = MaxAbsScaler()
 nmf = NMF(
     n_components= 800,
     random_state= 1,
-    max_iter= 1000,
+    max_iter= 2000,
     alpha_W= 0,     # Row level
-    alpha_H= 10,    # Component/column level
-    l1_ratio= 0.5
+    alpha_H= 20,    # Component/column level
+    l1_ratio= 0.9
 )
 
 norm = Normalizer()
@@ -57,7 +57,7 @@ scal_nmf_norm = np.concatenate(results, axis=0)
 scal_nmf_norm_df = pd.DataFrame(scal_nmf_norm, index=artist_list)
 
 # This is for exporting the model
-scal_nmf_norm_df.to_csv('sparse9.1-trained.csv')
+scal_nmf_norm_df.to_csv('sparse10.1-trained.csv')
 
 
 end_time = datetime.datetime.now()
