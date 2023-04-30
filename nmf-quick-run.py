@@ -3,17 +3,14 @@ import pandas as pd
 
 
 # This cell is for importing the already trained model
-scal_nmf_norm_df = pd.read_csv('sparse5-trained.csv', index_col='Unnamed: 0')
+scal_nmf_norm_df = pd.read_csv('sparse10.1-trained.csv', index_col='Unnamed: 0')
 
 loop_break = str('nmf-quick-run').lower()
 
-print('''
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
-In order to exit the program, type in: nmf-quick-run
-''')
+print('-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-')
 
 while True:
+    print('In order to exit the program, type in: nmf-quick-run')
     try:
         # Get user input and convert to lowercase
         selecting_artist = input('Enter Artist: ').lower()
