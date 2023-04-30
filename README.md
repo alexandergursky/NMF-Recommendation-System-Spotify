@@ -10,7 +10,19 @@ The initial matrix of the NMF algorithm is regarded as a clustering result. The 
 - Pandas: pip3 install pandas
 - Numpy: pip3 install pandas
 - Multiprocessing: pip3 install multiprocessing
+  
+### Workflow  
+1. *Spotify API calls* (gathering data)
+2. reducing-user-load.py (cleaning data)
+3. trying-to-sparse.ipynb (cleaning data)
+4. Spotify_pivot_windows.ipynb / artist-cleaning.ipynb (cleaning data)
+5. *Modeling*
+6. jupyter-metric-testing.ipynb (testing)
+7. nmf-quick-run.py (visualizing and testing interface)
+8. talon-nmf-sparse91.py / nmf-run-sparse911.sh (Scaling the model for HPC cluster)
+9. Iterative process of re-cleaning, re-defining model, hyperprameter tuning. testing, etc.
 
+  
 ### How To Use
 I have included the trained model for demonstration purposes, if you would like the raw data in order to follow along 
 with my cleaning and wrangling process, please reach out to me and I would be glad to distribute that. The data comes from Spotify's API, my raw data contains over 2.3 billion observations by 4 features, so naturally it is a huge file that can not be uploaded to GitHub (file is a 1.2Gb CSV file). 
