@@ -15,6 +15,7 @@ The initial matrix of the NMF algorithm is regarded as a clustering result. The 
 I have included the trained model for demonstration purposes, if you would like the raw data in order to follow along 
 with my cleaning and wrangling process, please reach out to me and I would be glad to distribute that. The data comes from Spotify's API, my raw data contains over 2.3 billion observations by 4 features, so naturally it is a huge file that can not be uploaded to GitHub (file is a 1.2Gb CSV file). 
 <br><br>
+("nmf-quick-run.py" is the recommended method)  
 To use it, open one of the 3 files listed below: <br>
 - "Spotify_NMF_Final.ipynb"
 - "NMF_Music_Artist_Recomend_Sys_R_Conversion.R"
@@ -29,3 +30,12 @@ Please reach out for any further inquiries.
 ![Screenshot](example3.PNG)
 ![Screenshot](example4.PNG)
 ![Screenshot](example5.PNG)
+---
+## IMPORTANT UPDATES (4/29/2023)
+- Trained a more advanced iter (sparse10) on a super computer cluster
+- Sparse10 now preserves all users for better results during decomposition
+- Fixed time complexity issue, reason: setting components to features was incorrect. I needed to set the components to a "cluster" amount of sorts, similar to k-means. Before I was setting the components to the count of users, algorithm was not decomposing properly as a result of this.
+- Included more files to the repository (files that are current and support the updated fixes, main cleaning file is now "artist-cleaning.ipynb", main HPC cluster files are "talon-nmf-sparse91.py" and "nmf-run-sparse911.sh", NMF testing is now "jupyter-metric-testing.ipynb", and misc.).
+- Fixed awful compressing size of the data and recomendation system, solution: clean the data more efficiently, and properly allocate the "n_components=" arg. You will notice that the files uploaded are no longer the sizes that I claim in the briefing which is great.
+  
+The new iter was trained on **Georgia Southern Universities** HPC super computer cluster using 32-cores with 4G of RAM allocated to each core, timing around 6-8mins to train the model. The most up-to-date version of the recommendation system is to run "sparse10-trained.csv".
